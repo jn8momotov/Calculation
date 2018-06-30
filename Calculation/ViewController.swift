@@ -10,13 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Переменная результата
     @IBOutlet weak var displayResultLabel: UILabel!
     
     var stillTyping = false
+    // Поставили точку или нет
     var dotIsPlaced = false
+    // Первый операнд для операций
     var firstOperand: Double = 0
+    // Второй операнд для операций
     var secondOperand: Double = 0
+    // Операция для двух операндов
     var operationSign: String = ""
+    // Текущий ввод пользователя
     var currentInput: Double {
         get {
             return Double(displayResultLabel.text!)!
